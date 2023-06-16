@@ -19,6 +19,6 @@ The ‘Chlorine decay and Trihalomethanes formation’ module of the EPyT-C enco
 The ‘Bacterial regrowth’ module of the EPyT-C encompasses a one-dimensional mechanistic MSRT model integrating the advective transport and physicochemical exchanges of the following five water quality parameters: free available chlorine (FAC), recalictrant dissolved organic carbon (RDOC), biodegradable dissolved organic carbon (BDOC), free living bacteria (FLB), and free dead bacteria (FDB).
 
 # References
-Rossman, L.A., Woo, H., Tryby, M., Shang, F., Janke, R., Haxton, T., 2020. Epanet 2.2 User ’s Manual, USEPA. Cincinnati, Ohio. https://doi.org/10.1177/0306312708089715
+Rossman, L.A., Woo, H., Tryby, M., Shang, F., Janke, R., Haxton, T., 2020. Epanet 2.2 User ’s Manual, USEPA. Cincinnati, Ohio.
 
 Tzatchkov, V.G., Aldama, A.A., Arreguin, F.I., 2002. Advection-Dispersion-Reaction Modeling in Water Distribution Networks. J. Water Resour. Plan. Manag. 128, 334–342. https://doi.org/10.1061/(asce)0733-9496(2002)128:5(334)
