@@ -49,8 +49,8 @@ EPyT-C offers the following flexibilities, making it a handy tool for research a
 6. Control the computational efficiency by adjusting the accuracy of the numerical solutions.
 
 <figure>
-<figcaption align = "center"><b>Figure 2</b>. Spatial distribution of FAC at time = 12 h within the benchmark test network (EPANET Network 3) corresponding to FAC concentration 0.5 mg/L at the river and lake water source outlets. The TOC concentration values at the river and lake sources outlets were maintained at 3 mg/L and 1 mg/L, respectively. The simulations were performed using the 'Chlorine decay and Trihalomethanes formation' module of EPyT-C. </figcaption>
-<img src="Figure 1.png" width="512"/>
+<figcaption align = "center"><b>Figure 2</b>. Spatial distribution of FAC at time = 12 hrs within the benchmark test network (EPANET Network 3) corresponding to FAC concentration 0.5 mg/L at the river and lake water source outlets. The TOC concentration values at the river and lake sources outlets were maintained at 3 mg/L and 1 mg/L, respectively. The simulations were performed using the 'Chlorine decay and Trihalomethanes formation' module of EPyT-C. The squares denote reservoirs, stars indicate tanks, and circles indicate junctions. The lines specify links connecting reservoirs, tanks, and nodes.</figcaption>
+<img src="Figure 2.png" width="1024"/>
 </figure>
 
 In conclusion, EPyT-C is a practical tool that can assist the scientific community and water utility managers examine WDS performance under different operating scenarios. EPyT-C scripts are under continuous development and can be further extended and improved by users and developers for specific applications. Forthcoming works involve advancing EPyT-C modeling capability to simulate dispersive transport. The example provided includes simulating the spatiotemporal distribution of FAC and THMs in a benchmark WDS considering the uncertainties in the physicochemical interactions governing the FAC degradation and THMs formation within the aquatic domain.
