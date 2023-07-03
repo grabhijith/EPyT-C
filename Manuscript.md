@@ -1,10 +1,7 @@
-title: 'EPyT-C: A Python package for water quality modeling in water distribution systems'
-tags:
-  - EPANET
-  - Python
-  - water quality
-  - chlorine
-  - bacteria
+# EPyT-C: A Python package for water quality modeling in water distribution systems
+
+tags: EPANET; Python; water quality; chlorine; bacteria
+
 authors:
   - name: Gopinathan R. Abhijith
     orcid: 0000-0002-7390-7848
@@ -12,13 +9,13 @@ authors:
     corresponding: true
   - name: Avi Ostfeld
     affiliation: 2
+
 affiliations:
  - name: Gopinathan R. Abhijith, Assistant Professor, BITS Pilani Hyderabad Campus, Telanagana, India
    index: 1
  - name: Avi Ostfeld, Technion - Israel Institite of Technology, Haifa, Isrel
    index: 2
-date: 24 June 2023
-bibliography: paper.bib
+
 
 # Summary
 
@@ -32,11 +29,14 @@ However, EPANET-C, utilizing EPANET-MSX solver for solving advective-reactive eq
 
 # Functionality
 
-EPyT is an open-source software, initially developed by the KIOS Research and Innovation Center of Excellence, University of Cyprus, operating within the Python environment to provide a programming interface for the latest version of EPANET 2.2 [(Rossman et al., 2020)](#4). It calls EPANET a shared object and employs an Object-Oriented approach for interfacing EPANET with Python. Though EPyT can be employed for performing single-species water quality analysis, which comes within the scope of EPANET 2.2, it lacks multi-species reactive-transport modeling capability in its current form. In other words, EPyT can only analyze one water quality parameter at a time. Consequently, the water quality modeling compartment of EPyT needs to be improved to solve several real-world problems concerning water quality variations during delivery via WDS. A fully independent water quality modeling extension, EPyT-C, is developed in this direction. The source code of EPyT-C calls EPyT and employs the hydraulic solver of EPANET 2.2 for performing hydraulic simulation, which the in-built water quality solver then utilizes for performing MSRT modeling.The conceptual framework of EPyT-C is described in Figure 1.
+EPyT is an open-source software, initially developed by the KIOS Research and Innovation Center of Excellence, University of Cyprus, operating within the Python environment to provide a programming interface for the latest version of EPANET 2.2 [(Rossman et al., 2020)](#4). It calls EPANET a shared object and employs an Object-Oriented approach for interfacing EPANET with Python. Though EPyT can be employed for performing single-species water quality analysis, which comes within the scope of EPANET 2.2, it lacks multi-species reactive-transport modeling capability in its current form. In other words, EPyT can only analyze one water quality parameter at a time. Consequently, the water quality modeling compartment of EPyT needs to be improved to solve several real-world problems concerning water quality variations during delivery via WDS. A fully independent water quality modeling extension, EPyT-C, is developed in this direction. The source code of EPyT-C calls EPyT and employs the hydraulic solver of EPANET 2.2 for performing hydraulic simulation, which the in-built water quality solver then utilizes for performing MSRT modeling. The conceptual framework of EPyT-C is described in Figure 1.
 
-![Screenshot](screenshot.png)
+<figure>
+<figcaption align = "center"><b>Figure 1</b>. Conceptual framework of EPyT-C.</figcaption>
+<img src="Figure 1.png" width="512"/>
+</figure>
 
-In its current form, EPyT-C comprises two in-built modules - the 'Chlorine decay and Trihalomethanes formation' module and the 'Bacterial regrowth' module. The former EPyT-C module encompasses all the required details on the physical and physicochemical interactions of the following three water quality parameters: free available chlorine (FAC), total organic carbon, and trihalomethanes (THMs). The latter contains details on the physical, physicochemical, and biochemical interactions of the five water quality parameters: FAC, recalcitrant dissolved organic carbon, biodegradable dissolved organic carbon, free-living bacteria (suspended heterotrophic bacteria), and free dead bacteria.
+In its current form, EPyT-C comprises two in-built modules - the 'Chlorine decay and Trihalomethanes formation' module and the 'Bacterial regrowth' module. The former EPyT-C module encompasses all the required details on the physical and physicochemical interactions of the following three water quality parameters: free available chlorine (FAC), total organic carbon (TOC), and trihalomethanes. The latter contains details on the physical, physicochemical, and biochemical interactions of the five water quality parameters: FAC, recalcitrant dissolved organic carbon, biodegradable dissolved organic carbon, free-living bacteria (suspended heterotrophic bacteria), and free dead bacteria.
 
 Based on the module selected for WDS analysis, EPyT-C evolves partial differential equations and ordinary differential equations governing the propagation and formation/ degradation of the corresponding water quality parameters within the distribution network realm. Once the governing equations (advective-reactive equations) are framed, the numerical method that involves the explicit method of characteristics and the fourth-order Runge-Kutta method, initially presented by [Tzatchkov et al. (2002)](#6), is applied to derive numerical solutions - spatiotemporal distribution of complex water quality parameters in WDS. 
 
@@ -44,11 +44,20 @@ EPyT-C offers the following flexibilities, making it a handy tool for research a
 1. Allows time-series variations in the input values for the water quality parameters at the sources (reservoirs and booster nodes).
 2. Customize the random fluctuations in the input values for the water quality parameters at the sources.
 3. Customize the perturbations in the reaction rate coefficient values.
-4. Customize the outputs and export the data as Excel files or other formats.
+4. Customize the outputs and export the data as Excel files or other formats (Figure 2).
 5. Customize the numerical accuracy by altering the model parameters (time step, velocity tolerance, etc.).
 6. Control the computational efficiency by adjusting the accuracy of the numerical solutions.
 
+<figure>
+<figcaption align = "center"><b>Figure 2</b>. Spatial distribution of FAC at time = 12 h within the benchmark test network (EPANET Network 3) corresponding to FAC concentration 0.5 mg/L at the river and lake water source outlets. The TOC concentration values at the river and lake sources outlets were maintained at 3 mg/L and 1 mg/L, respectively. The simulations were performed using the 'Chlorine decay and Trihalomethanes formation' module of EPyT-C. </figcaption>
+<img src="Figure 1.png" width="512"/>
+</figure>
+
 In conclusion, EPyT-C is a practical tool that can assist the scientific community and water utility managers examine WDS performance under different operating scenarios. EPyT-C scripts are under continuous development and can be further extended and improved by users and developers for specific applications. Forthcoming works involve advancing EPyT-C modeling capability to simulate dispersive transport. The example provided includes simulating the spatiotemporal distribution of FAC and THMs in a benchmark WDS considering the uncertainties in the physicochemical interactions governing the FAC degradation and THMs formation within the aquatic domain.
+
+# Acknowledgements
+
+This research was supported by a grant from the Ministry of Science and Technology of the State of Israel and the Federal Ministry of Education and Research (BMBF), Germany.
 
 ## References
 <a id="1"></a> 
@@ -80,19 +89,3 @@ Cincinnati US Environ. Prot. Agency Natl. Risk Manag. Res. Lab.
 Tzatchkov, V. G., Aldama, A. A., Arreguin, F. I. (2002) 
 Advection-Dispersion-Reaction Modeling in Water Distribution Networks. 
 Journal of Water Resources Planning and Management, 128(5), 334-342.
-
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
-
-# Acknowledgements
-
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
-
-# References
