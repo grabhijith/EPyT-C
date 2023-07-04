@@ -20,7 +20,7 @@ affiliations:
  - name: Faculty of Civil and Environmental Engineering, Technion - Israel Institite of Technology, Haifa, Isrel
    index: 2
 date: 04 July 2023
-bibliography: Paper.bib
+bibliography: paper.bib
 
 ---
 
