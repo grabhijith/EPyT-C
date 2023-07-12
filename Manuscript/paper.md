@@ -2,7 +2,7 @@
 title: 'EPyT-C: A Python package for water quality modeling in water distribution systems'
 tags:
   - Python
-  - EAPNET
+  - EPANET
   - Water distribution
   - Water quality
   - Chlorine
