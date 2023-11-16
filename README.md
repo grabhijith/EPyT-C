@@ -1,9 +1,4 @@
 # EPyT-C - Fully independent multi-species reactive transport modelling extension for EPyT (EPANET-Python)
-Gopinathan R. Abhijith<sup>1</sup> and Avi Ostfeld<sup>2</sup>
-
-<sup>1</sup> Department of Civil Engineering, BITS Pilani Hyderabad Campus, Hyderabad, India. Email: abhijith.gr@hyderabad.bits-pilani.ac.in
-
-<sup>2</sup> Faculty of Civil and Environmental Engineering, Technion – Israel Institute of Technology, Haifa, Israel. Email: ostfeld@cv.technion.ac.il
 
 # EPANET-PYTHON toolkit
 EPyT is an open-source software, initially developed by the KIOS Research and Innovation Center of Excellence, University of Cyprus, operating within the Python environment for providing a PYTHON programming interface for the latest version of EPANET (Rossman et al., 2020). It calls EPANET as a shared object and employs an Object-Oriented approach for interfacing EPANET with PYTHON.
