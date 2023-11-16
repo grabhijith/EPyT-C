@@ -1,7 +1,0 @@
-os
-math
-numpy
-pandas
-copy
-time
-epyt
