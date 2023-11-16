@@ -1,4 +1,7 @@
-An open-source Python package for easy generation and customization of water distribution network visualizations. Find the `documentation here`_.
+<p>An example of using <span class="red">interpreted text</span></p>
+------------
+
+An open-source Python package for modeling water quality in water distribution systems. Find the `documentation here`_.
 
 .. _`documentation here`: https://viswaternet.readthedocs.io
 
