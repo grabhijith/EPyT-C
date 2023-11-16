@@ -1,48 +1,46 @@
-<p>An example of using <span class="red">interpreted text</span></p>
-------------
+``EPyT-C``
+============
 
 An open-source Python package for modeling water quality in water distribution systems. Find the `documentation here`_.
 
 .. _`documentation here`: https://viswaternet.readthedocs.io
 
 
-Dependencies
+*Dependencies*
 ------------
-◉ WNTR ◉ NetworkX 2.7+ ◉ Matplotlib 3.5.0+ ◉ Pandas ◉ NumPy ◉ imageio ◉
+◉ EPyT ◉ NumPy 1.2.6 ◉ Pandas 2.1.3 ◉ XlsxWriter 3.1.9 ◉
 
-VisWaterNet has been tested on Python **3.8** and **3.9**.
+EPyT-C has been tested on Python **3.11**.
 
-Features
+*Flexibilities*
 --------
-VisWaterNet is designed to plot simulation data onto a network graph, with a large variety of customization options available. The package includes the capabilities to:
+EPyT-C offers the following flexibilities, making it a handy tool for research and industry:
 
-* Discretize network or simulation data.
-* Visualize discretized or continuous data on network graphs.
-* Import data from excel files or data generated with Python.
-* Create GIFs of data across simulation timesteps.
-* Customize style of virtually every element of the network graph, including: reservoirs, tanks, valves, pumps, links, and nodes.
-* Draw labels relative to nodes or based on an absolute position on the figure.
-* Draw specific nodes or links with their own data and style.
+1. Allows time-series variations in the input values for the water quality parameters at the sources (reservoirs and booster nodes).
 
-Installation
+2. Customize the random fluctuations in the input values for the water quality parameters at the sources.
+
+3. Customize the perturbations in the reaction rate coefficient values.
+
+4. Customize the outputs and export the data as Excel files or other formats.
+
+5. Customize the numerical accuracy by altering the model parameters (time step, velocity tolerance, etc.).
+
+6. Control the computational efficiency by adjusting the accuracy of the numerical solutions.
+
+*Installation*
 ---------------
-To install VisWaterNet, run this command in your terminal:
+To install EPyT-C, run this command in your terminal:
 
 .. code:: python
 
-    pip install viswaternet
+    pip install epyt_c
     
-Alternatively, the sources for VisWaterNet can be downloaded from the Github repo. You can clone the public repository:
+Alternatively, the sources for EPyT-C can be downloaded from the Github repo. You can clone the public repository:
 
 .. code:: python
 
     git clone git://github.com/tylertrimble/viswaternet
-
-Once you have a copy of the source, you can install it with:
-
-.. code:: python
-
-    python setup.py install
 
 Getting Started
 ---------------
@@ -100,7 +98,7 @@ More examples that demonstrate the range of VisWaterNet's plotting abilities can
 
 .. _`Example Applications`: https://viswaternet.readthedocs.io/en/latest/examples.html
 
-Contributing
+*Contributing*
 ------------
 We welcome contributions in the form of suggestions, feedback, reports of bugs, and additions to code functionality and documentation from all users! You can find instructions to raise issues, submit pull requests, and `run automated tests`_ in the `docs`_ or the `CONTRIBUTING page`_.
 
@@ -108,18 +106,13 @@ We welcome contributions in the form of suggestions, feedback, reports of bugs, 
 .. _`docs`: https://viswaternet.readthedocs.io/en/latest/contributing.html
 .. _`run automated tests`: https://viswaternet.readthedocs.io/en/latest/contributing.html#testing
 
-Contact
+*Contact*
 -------
-Tyler Trimble - tylerl.trimble@utexas.edu
+**Gopinbathan R Abhijith** - abhijith@iitk.ac.in
 
-Meghna Thomas - meghnathomas@utexas.edu
+**Avi Ostfeld** - ostfeld@technion.ac.il
 
-Lina Sela - linasela@utexas.edu
-
-Credits
+*Credits*
 -------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+The **Smart Water Infrastructure Laboratory**, **Indian Institute of Technology Kanpur** and **Technion Israel Institute of Technology** jointly created this package.
