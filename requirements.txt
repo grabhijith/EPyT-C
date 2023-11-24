@@ -1,4 +1,4 @@
 epyt
 numpy
 pandas
-xlswriter
+xlsxwriter
