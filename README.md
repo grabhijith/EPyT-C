@@ -1,9 +1,12 @@
-# EPyT-C - Fully independent multi-species reactive transport modelling extension for EPyT (EPANET-Python)
+# EPyT-C - Fully independent multi-species reactive transport modelling extension for EPyT (EPANET-Python) toolkit
 
-# EPANET-PYTHON toolkit
+An open-source Python package for modeling water quality in water distribution systems.
+
+# EPyT (EPANET-Python) toolkit
 EPyT is an open-source software, initially developed by the KIOS Research and Innovation Center of Excellence, University of Cyprus, operating within the Python environment for providing a PYTHON programming interface for the latest version of EPANET (Rossman et al., 2020). It calls EPANET as a shared object and employs an Object-Oriented approach for interfacing EPANET with PYTHON.
 
-# Water quality modeling extension – EPyT-C
+# Water quality modeling extensions of EPyT-C
+
 Though EPyT can be employed for performing water quality analysis, which comes within the scope of EPANET 2.2, it does not have any multi-species reactive-transport (MSRT) modeling capability in its current form. A fully independent water quality modeling extension, EPyT-C (in which C stands for contaminant), is developed toward this limitation. The source code of EPyT-C calls EPyT and employs the hydraulic solver of EPANET 2.2 for performing hydraulic simulation, which the in-built water quality solver then utilizes for performing MSRT modeling.
 	
  The default modules of EPyT-C conceptualize scientific knowledge about the physical, physicochemical, and biochemical exchanges concerning water quality, mathematize them as partial differential equations (PDE), and numerically solve them to simulate the spatiotemporal distribution of complex water quality parameters in WDS. EPyT-C employs the numerical method initially presented by (Tzatchkov et al., 2002), which solves the advective-reactive equations by combining the explicit method of characteristics and the fourth-order Runge-Kutta method.
@@ -26,11 +29,11 @@ EPyT-C offers the following flexibilities, making it a handy tool for research a
 
 # Installation
 
-To install EPyT-C, 
-
-`pip install epyt_c`
+To install EPyT-C,
+> pip install epyt_c
     
-Alternatively, the sources for EPyT-C can be downloaded from the Github repo. You can clone the public repository: https://github.com/grabhijith/EPyT-C
+Alternatively, the sources for EPyT-C can be downloaded from the Github repo. You can clone the public repository: 
+> https://github.com/grabhijith/EPyT-C
 
 # Dependencies
 - EPyT 
